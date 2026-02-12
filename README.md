@@ -8,13 +8,41 @@ This project implements an agentic AI system with autonomous multi-agent workflo
 
 ### Key Features
 
-- **🔄 Autonomous Agent Workflow**: Multi-step reasoning with specialized agents
-- **📚 RAG Pipeline**: Semantic search with vector database (ChromaDB)
-- **🤗 100% Free**: Uses Hugging Face models (no API costs)
-- **🎨 Interactive UI**: Streamlit-based interface with real-time visualization
-- **📊 Source Attribution**: All responses cite original documents
-- **⚡ State Graph Orchestration**: LangGraph for complex agent interactions
+## 🔬 Technical Design Decisions
 
+### Vector Database Selection
+**Chose ChromaDB** over Pinecone/Weaviate for this implementation:
+- ✅ Local-first development (no external API dependencies)
+- ✅ Native LangChain integration
+- ✅ Fastest path to working prototype
+
+**Production Considerations:**
+- **Pinecone**: Managed service, better for scale (millions of vectors)
+- **Weaviate**: Superior hybrid search, advanced filtering capabilities
+- **ChromaDB**: Excellent for prototyping, self-hosted production
+
+### Evaluation & Quality Metrics
+Current implementation tracks:
+- Source attribution accuracy (% of responses with citations)
+- Retrieval relevance (semantic search precision)
+- Response latency
+
+**Next Steps for Production:**
+- RAGAS metrics: Faithfulness, answer relevance, context precision
+- DeepEval: Hallucination detection, toxicity checks
+- Custom test dataset with ground truth Q&A pairs
+
+### Agent Architecture Philosophy
+**Sequential workflow** (Retrieve → Research → Synthesize):
+- ✅ Clear separation of concerns
+- ✅ Easy to debug and monitor
+- ✅ Predictable behavior
+
+**Considered but deferred:**
+- Self-reflection loops (validator agent checking synthesis quality)
+- Multi-path reasoning with agent voting
+- Dynamic replanning based on retrieval quality
+- 
 ## 🏗️ Architecture
 ```
 ┌─────────────────────────────────────────────────────────┐
