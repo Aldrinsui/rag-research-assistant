@@ -1,0 +1,5 @@
+LangChain is a framework for developing applications powered by language models. It provides tools for chaining together different components like prompts, models, and data sources to create complex AI applications.
+
+Key features include: agent frameworks for autonomous decision-making, memory systems for conversation history, document loaders for various data sources, and chains for combining multiple operations. LangChain simplifies building production-ready LLM applications.
+
+LangGraph, an extension of LangChain, enables building stateful, multi-agent workflows using graph-based orchestration. This allows for more complex agent interactions and decision-making processes.

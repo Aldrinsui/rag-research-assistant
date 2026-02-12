@@ -1,0 +1,5 @@
+Transformers are a type of neural network architecture that has revolutionized natural language processing. Introduced in the paper "Attention Is All You Need" in 2017, transformers use self-attention mechanisms to process sequential data in parallel rather than sequentially.
+
+The key innovation is the attention mechanism, which allows the model to weigh the importance of different parts of the input when making predictions. This has led to breakthrough models like BERT, GPT, and T5 that excel at various NLP tasks.
+
+Transformers consist of encoder and decoder blocks. The encoder processes input sequences, while the decoder generates output sequences. The self-attention mechanism allows each position to attend to all positions in the previous layer.

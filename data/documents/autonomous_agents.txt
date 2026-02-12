@@ -1,0 +1,5 @@
+Autonomous agents are AI systems that can perceive their environment, make decisions, and take actions to achieve specific goals without constant human oversight. In the context of LLMs, these agents can use tools, retrieve information, and execute multi-step reasoning.
+
+Modern agent frameworks like LangGraph, CrewAI, and AutoGen enable building sophisticated multi-agent systems. These agents can collaborate, delegate tasks, and execute complex workflows autonomously.
+
+Key components of autonomous agents include: reasoning engines, tool use capabilities, memory systems, and planning mechanisms. They represent the next evolution in AI systems beyond simple prompt-response interactions.

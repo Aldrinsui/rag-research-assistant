@@ -1,0 +1,5 @@
+Retrieval-Augmented Generation (RAG) combines information retrieval with text generation. RAG systems first retrieve relevant documents from a knowledge base, then use this context to generate more accurate and informed responses.
+
+The process involves: 1) Converting documents into embeddings and storing them in a vector database, 2) Embedding user queries and finding similar documents, 3) Passing retrieved context to a language model for generation. This approach reduces hallucinations and grounds responses in factual information.
+
+RAG is particularly useful for question-answering systems, chatbots, and knowledge management applications. It allows LLMs to access external knowledge without retraining the entire model.
